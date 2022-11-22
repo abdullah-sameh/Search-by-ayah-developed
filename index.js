@@ -36,6 +36,8 @@ function searchByInput(userInput) {
                 `
                 result.innerHTML += html
             }
+        
+            result.innerHTML = `<p class="numResult">النتائج : ${whatNeed.length} آية</p>` + result.innerHTML
 
         }).catch(err => {
             console.log(err)

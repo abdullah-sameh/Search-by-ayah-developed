@@ -10,6 +10,7 @@ fetch(`https://api.alquran.cloud/v1/quran/ar.minshawi`)
     .then(resp => resp.json())
     .then(data => allQuran.push(...Object.entries(data)))
     .catch(err => {})
+
 //* git number of ayah
 function searchByInput(userInput) {
     result.innerHTML = ''
@@ -17,6 +18,7 @@ function searchByInput(userInput) {
     fetch(endPoint)
         .then(resp => resp.json())
         .then(data => {
+            whatNeed.length = 0
             for (let i = 0; i < data.quran.length; i++) {
                 if (data.quran[i].text.includes(userInput)) {
                     whatNeed.push([data.quran[i].chapter, data.quran[i].verse])

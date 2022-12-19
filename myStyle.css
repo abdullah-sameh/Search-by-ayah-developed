@@ -1,177 +1,193 @@
 ::-webkit-scrollbar {
-    width: 15px;
+	width: 15px;
 }
 ::-webkit-scrollbar-track {
-    background: #C49991; 
+	background: #C49991; 
 }
 ::-webkit-scrollbar-thumb {
-    background: #2c1230; 
+	background: #2c1230; 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #200b24; 
+	background: #200b24; 
 } 
 body {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    place-items: center;
-    overflow: hidden;
-    overflow-y: scroll;
-    font-family: 'Noto Kufi Arabic', sans-serif;
-    background: #f7f7ff;
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	place-items: center;
+	overflow: hidden;
+	overflow-y: scroll;
+	font-family: 'Noto Kufi Arabic', sans-serif;
+	background: #f7f7ff;
 }
 .container {
-    text-align: center;
-    background: #c49991;
-    height: max-content;
-    padding: 50px 20px;
-    margin: auto 60px 20px 30px;
-    color: #2c1230;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #2c1230;
+	text-align: center;
+	background: #c49991;
+	height: max-content;
+	padding: 50px 20px;
+	margin: auto 60px 20px 30px;
+	color: #2c1230;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px #2c1230;
 }
 .container p {
-    font-size: 18px;
-    font-weight: 600;
+	font-size: 18px;
+	font-weight: 600;
 }
 .container input:nth-of-type(1) {
-    width: 300px;
-    height: 50px;
-    border: 2px solid #2c1230;
-    background: #f7f7f7;
-    border-radius: 5px;
-    font-size: 20px;
-    direction: rtl;
-    padding: 0 10px;
+	width: 300px;
+	height: 50px;
+	border: 2px solid #2c1230;
+	background: #f7f7f7;
+	border-radius: 5px;
+	font-size: 20px;
+	direction: rtl;
+	padding: 0 10px;
 }
 .container input:nth-of-type(1):focus {
-    outline: none;
-    border: 4px solid #2c1230;
+	outline: none;
+	border: 4px solid #2c1230;
 }
 .container input:nth-of-type(2) {
-    height: 50px;
-    border: 2px solid #2c1230;
-    background: #f7f7f7;
-    border-radius: 5px;
-    padding: 0 30px;
-    font-size: 22px;
-    font-family: 'Noto Kufi Arabic', sans-serif;
-    cursor: pointer;
+	height: 50px;
+	border: 2px solid #2c1230;
+	background: #f7f7f7;
+	border-radius: 5px;
+	padding: 0 30px;
+	font-size: 22px;
+	font-family: 'Noto Kufi Arabic', sans-serif;
+	cursor: pointer;
 }
 .container button {
-    display: block;
-    text-align: center;
-    margin: 20px auto 0;
-    font-size: 22px;
-    font-family: 'Noto Kufi Arabic', sans-serif;
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 0 20px;
+	display: block;
+	text-align: center;
+	margin: 20px auto 0;
+	font-size: 22px;
+	font-family: 'Noto Kufi Arabic', sans-serif;
+	cursor: pointer;
+	border-radius: 5px;
+	padding: 0 20px;
 }
 
 .footer {
-    direction: rtl;
+	direction: rtl;
 }
 #results ul {
-    all: initial;
-    margin-right: 40px;
-    display: grid;
-    gap: 10px;
-    margin-bottom: 25px;
-    font-family: 'Noto Kufi Arabic', sans-serif;
+	all: initial;
+	margin-right: 40px;
+	display: grid;
+	gap: 10px;
+	margin-bottom: 25px;
+	font-family: 'Noto Kufi Arabic', sans-serif;
 }
 #results ul .numResult {
-    background: #2c1230;
-    color: #f7f7ff;
-    width: max-content;
-    padding: 0 10px;
-    margin: auto;
-    font-family: 'Noto Kufi Arabic', sans-serif;
+	background: #2c1230;
+	color: #f7f7ff;
+	width: max-content;
+	padding: 0 10px;
+	margin: auto;
+	font-family: 'Noto Kufi Arabic', sans-serif;
 }
 #results ul li {
-    list-style: none;
-    width: 350px;
-    height: max-content;
-    background: #C49991;
-    color: #2c1230;
-    padding: 10px;
-    display: grid;
-    gap: 10px;
-    border: 10px solid #C49991;
-    border-radius: 5px;
-    box-shadow: 0 0 3px #2c1230,
-                inset 0 0 5px #2c1230;
+	list-style: none;
+	width: 350px;
+	height: max-content;
+	background: #C49991;
+	color: #2c1230;
+	padding: 10px;
+	display: grid;
+	gap: 10px;
+	border: 10px solid #C49991;
+	border-radius: 5px;
+	box-shadow: 0 0 3px #2c1230,
+				inset 0 0 5px #2c1230;
+	position: relative;
+	margin-bottom: 20px;
 }
 #results ul li span {
-    font-weight: 600;
-    width: 100%;
-    display: block;
-    margin: auto;
-    text-align: end;
+	font-weight: 600;
+	width: 100%;
+	display: block;
+	margin: auto;
+	text-align: end;
+}
+#results ul li span:last-of-type {
+	position: absolute;
+	background: #C49991;
+	border: 1px solid #200b24;
+	padding: 5px;
+	width: max-content;
+	top: -25px;
+	left: -25px;
+	transform: rotate(-30deg);
+	-webkit-transform: rotate(-30deg);
+	-moz-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	-o-transform: rotate(-30deg);
 }
 #results ul li span.surah {
-    font-size: 15px;
+	font-size: 15px;
 }
 audio {
-    justify-self: center;
+	justify-self: center;
 }
 
 #results ul li#not-found {
-    background: #2c1230;
-    color: #C49991;
-    text-align: end;
+	background: #2c1230;
+	color: #C49991;
+	text-align: end;
 }
 
 @media (max-width: 400px) {
-    body {
-        width: 100vw;
-        overflow-x: hidden;
-    }
-    .container {
-        width: 300px;
-        margin-bottom: 20px;
-    }
-    #results ul li {
-        width: 300px;
-        margin-left: -40px;
-    }
+	body {
+		width: 100vw;
+		overflow-x: hidden;
+	}
+	.container {
+		width: 300px;
+		margin-bottom: 20px;
+	}
+	#results ul li {
+		width: 300px;
+		margin-left: -40px;
+	}
 }
 
 #nums {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    justify-content: center;
-    gap: 5px;
+	display: grid;
+	grid-template-columns: repeat(6, auto);
+	justify-content: center;
+	gap: 5px;
 }
 
 #pre, #next {
-    padding: 10px;
-    border: none;
-    background-color: #2c1230;
-    color: #fff;
-    text-transform: uppercase;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 22px;
-    cursor: pointer;
-    font-weight: bold;
+	padding: 10px;
+	border: none;
+	background-color: #2c1230;
+	color: #fff;
+	text-transform: uppercase;
+	font-family:'Courier New', Courier, monospace;
+	font-size: 22px;
+	cursor: pointer;
+	font-weight: bold;
 }
 #pre:hover, #next:hover {
-    background: #200b24;
+	background: #200b24;
 }
 #pre:disabled, #next:disabled {
-    cursor: initial;
-    background-color: #200b24;
-    opacity: 0.4;
+	cursor: initial;
+	background-color: #200b24;
+	opacity: 0.4;
 }
 #nums > * {
-    padding: 10px;
-    border: none;
-    background-color: #2c1230;
-    color: #fff;
-    text-transform: uppercase;
-    font-family:'Courier New', Courier, monospace;
-    cursor: pointer;
+	padding: 10px;
+	border: none;
+	background-color: #2c1230;
+	color: #fff;
+	text-transform: uppercase;
+	font-family:'Courier New', Courier, monospace;
+	cursor: pointer;
 }
 #nums > *:hover {
-    background: #200b24;
+	background: #200b24;
 }
